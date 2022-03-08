@@ -1,12 +1,39 @@
+/* General */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-img {
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: extra-bold;
+}
+
+/* Nav Bar*/
+.logo {
   width: 200px;
   height: 100%;
+}
+
+.nav-links a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.nav-links a:hover {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #38383f;
+  background-color: white;
 }
 
 .nav-bar {
@@ -19,15 +46,103 @@ img {
 
 .nav-links {
   display: flex;
-  gap: 50px;
+  //gap: 50px;
   align-items: center;
   justify-content: end;
   width: 100%;
-  margin-right: 50px;
+  height: 100%;
+  padding-right: 50px;
 }
 
-a:link,
-a:visited {
+/* Hero Section*/
+.hero-img {
+  height: 50%;
+  width: 80%;
+}
+
+.button {
+  text-align: center;
   color: white;
-  text-decoration: none;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: #38383f;
+}
+
+.hero {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  gap: 20px;
+  padding: 10%;
+}
+
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 50%;
+}
+
+/* Info Section */
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #38383f;
+  margin: 40px;
+}
+
+.info-section {
+  background-color: #38383f;
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.info-img {
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+}
+
+.img1 {
+  background: url(./images/Schumacher.png);
+}
+
+.img2 {
+  background: url(./images/hamilton.png);
+}
+
+.img3 {
+  background: url(./images/vettel.png);
+}
+
+.img4 {
+  background: url(./images/alonso.png);
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.quote {
+  padding: 80px 200px 80px 200px;
+  font-size: 36px;
+  text-align: end;
+}
+
+footer {
+  background-color: #38383f;
+  text-align: center;
+  color: white;
 }
